@@ -240,21 +240,6 @@
   <div id="wrapper" class="clearfix">
 
     <script type="text/javascript">
-
-      $("#light-version").click(function () {
-        cname = 'lightVersion';
-        cvalue = '1';
-        document.cookie = cname + "=" + cvalue + ";path=/";
-        alert('Switching to Light version...\nYou can switch versions (Normal or Light) anytime from the link present on the footer.');
-        location.reload();
-      });
-
-      if (!localStorage.firstVisit && (window.mobileCheck() == false)) {
-        $("#preloader").after('<div id="preloader2"><img class="tour-bgpic" src="images/tour-bgpic.png"><div id="spinner"><div class="loader"><h1 class="preloader-cap text-left">Welcome to the new <span class="typed-text-carousel" data-speed="90" data-back_delay="500" data-loop="true"><span>website!</span><span>approach!</span><span>world of opportunities!</span></span></h1><h2 class="preloader-cap text-left">Take a quick tour to explore more...</h2><div id="start-tour" class="btn btn-default btn-sm btn-preloader mt-30">Let&apos;s Go!</div><div id="skip-tour" class="btn btn-default btn-sm btn-preloader mt-30 ml-30">Skip Tour</div></div></div></div>');
-      }
-      else {
-        localStorage.firstVisit = "1";
-      }
     </script>
 
 
